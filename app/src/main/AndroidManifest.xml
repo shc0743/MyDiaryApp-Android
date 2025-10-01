@@ -36,7 +36,7 @@
         <activity
             android:name=".ui.about.ProjectPageOverlayActivity"
             android:exported="false"
-            android:theme="@style/Theme.Transparent" />
+            android:theme="@style/Theme.Backdrop" />
         <activity
             android:name=".ui.about.OpenSourceLicensesActivity"
             android:exported="true"

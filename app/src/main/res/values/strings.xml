@@ -53,4 +53,5 @@
     <string name="settings_permission_explain_open_activity">说明应用程序如何使用权限。</string>
     <string name="title_activity_permission_explain">权限说明</string>
     <string name="click_to_open_project_homepage">点击打开项目主页</string>
+    <string name="project_homepage">https://github.com/shc0743/MyDiaryApp-Android</string>
 </resources>

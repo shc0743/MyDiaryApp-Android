@@ -7,9 +7,33 @@
         <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
     </style>
 
-    <style name="Theme.Transparent" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="Theme.Transparent" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Backdrop" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 半透明背景 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/backdrop_background</item>
+
+        <!-- 背景模糊效果 -->
+        <item name="android:windowEnableSplitTouch">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <!-- 背景暗淡效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+
+        <!-- 动画 -->
+<!--        <item name="android:windowAnimationStyle">@style/Animation.Backdrop</item>-->
+    </style>
+
+    <color name="backdrop_background">#80000000</color>
+
+    <style name="Animation.Backdrop" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
     </style>
 </resources>

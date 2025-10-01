@@ -35,11 +35,12 @@ public class ProjectPageOverlayActivity extends AppCompatActivity {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
 
+        findViewById(R.id.project_page_overlay).setOnClickListener(v -> finish());
         Button btn = findViewById(R.id.button_open_homepage);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri webpage = Uri.parse(R.string.project_homepage);
+                Uri webpage = Uri.parse(getString(R.string.project_homepage));
                 Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
 
                 // 检查是否有浏览器可以处理这个Intent

@@ -103,7 +103,7 @@ public class SettingsActivity extends AppCompatActivity {
                     osl = findPreference("open_source_license"),
                     pex = findPreference("permission_explain"),
                     pmp = findPreference("product_mainpage");
-            if (about != null && osl != null && pmp != null) {
+            if (about != null && osl != null && pex != null && pmp != null) {
                 about.setOnPreferenceClickListener(preference -> {
                     Intent intent = new Intent(requireActivity(), AboutActivity.class);
                     startActivity(intent);

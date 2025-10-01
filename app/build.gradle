@@ -10,10 +10,10 @@ android {
 
     defaultConfig {
         applicationId "com.furieau.apps.mydiaryappnative"
-        minSdk 28
+        minSdk 33
         targetSdk 36
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "0.0.1 Internal Dev"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
