@@ -1,0 +1,67 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/settings_basic">
+
+        <EditTextPreference
+            app:key="yourname"
+            app:title="@string/yourname"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:defaultValue="decline"
+            app:entries="@array/acceptlicense_entries"
+            app:entryValues="@array/acceptlicense_values"
+            app:key="acceptlicense"
+            app:title="@string/acceptlicense_settings"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/privacy_and_security">
+
+        <Preference
+            app:key="privacy_policy"
+            app:summary="@string/view_privacy_policy"
+            app:title="@string/privacy_policy" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/account">
+
+        <Preference
+            app:key="logout"
+            app:summary="@string/logout_this_account"
+            app:title="@string/logout" />
+
+        <Preference
+            app:key="delete_account"
+            app:summary="@string/please_notice_this_will_reset_all_prefs"
+            app:title="@string/reset_pref" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/about">
+
+        <Preference
+            app:key="about_app"
+            app:summary="@string/about_this_app_open_activity"
+            app:title="@string/about_this_app" />
+
+        <Preference
+            app:key="open_source_license"
+            app:summary="@string/settings_open_source_license_open_activity"
+            app:title="@string/settings_open_source_license" />
+
+        <Preference
+            app:key="permission_explain"
+            app:summary="@string/settings_permission_explain_open_activity"
+            app:title="@string/settings_permission_explain" />
+
+        <Preference
+            app:key="product_mainpage"
+            app:summary="@string/about_this_app_open_mainpage"
+            app:title="@string/about_this_app_product_mainpage" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
