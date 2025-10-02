@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">My Diary App</string>
     <string name="title_activity_login">登录</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
+    <string name="prompt_email">电子邮件地址</string>
+    <string name="prompt_password">密码</string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
+    <string name="welcome">欢迎，%1$s！</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
@@ -54,4 +54,22 @@
     <string name="title_activity_permission_explain">权限说明</string>
     <string name="click_to_open_project_homepage">点击打开项目主页</string>
     <string name="project_homepage">https://github.com/shc0743/MyDiaryApp-Android</string>
+    <string name="application">应用程序</string>
+    <string name="telemetry_enabled">启用遥测</string>
+    <string name="about_telemetry_settings">上传一些使用情况数据和可选诊断数据，以帮助我们改善应用程序</string>
+    <string name="upload_crash_reports">允许上传崩溃报告</string>
+    <string name="upload_crash_reports_settings">上传应用程序的崩溃报告，以帮助我们改善应用程序</string>
+    <string name="auto_update">自动更新</string>
+    <string name="open_auto_update_settings">打开自动更新设置</string>
+    <string name="feedback">反馈</string>
+    <string name="feedback_app_problems">反馈应用程序的相关问题</string>
+    <string name="senadina">希娜狄雅</string>
+    <string name="input">输入</string>
+    <string name="output">输出</string>
+    <string name="debug">调试</string>
+    <string name="open_aescipher_debug">打开 AESCipherActivity</string>
+    <string name="encrypt">加密</string>
+    <string name="decrypt">解密</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="senadina_encrypt_key_encrypted">HhOoEpHLEV5Ql+MpwcU+y4n3l9H+bAiSmIVxQqFEYfo=</string>
 </resources>

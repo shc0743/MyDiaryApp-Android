@@ -40,6 +40,25 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory app:title="@string/application">
+
+        <CheckBoxPreference
+            app:key="enable_telemetry"
+            app:summary="@string/about_telemetry_settings"
+            app:title="@string/telemetry_enabled" />
+
+        <CheckBoxPreference
+            app:key="upload_crash_reports"
+            app:summary="@string/upload_crash_reports_settings"
+            app:title="@string/upload_crash_reports" />
+
+        <Preference
+            app:key="update_settings"
+            app:summary="@string/open_auto_update_settings"
+            app:title="@string/auto_update" />
+
+    </PreferenceCategory>
+
     <PreferenceCategory app:title="@string/about">
 
         <Preference
@@ -61,6 +80,20 @@
             app:key="product_mainpage"
             app:summary="@string/about_this_app_open_mainpage"
             app:title="@string/about_this_app_product_mainpage" />
+
+        <Preference
+            app:key="feedback"
+            app:summary="@string/feedback_app_problems"
+            app:title="@string/feedback" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/debug">
+
+        <Preference
+            app:key="open_aescipher"
+            app:summary="@string/open_aescipher_debug"
+            app:title="@string/open_aescipher_debug" />
 
     </PreferenceCategory>
 

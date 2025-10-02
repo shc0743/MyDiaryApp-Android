@@ -17,6 +17,7 @@ import com.furieau.apps.mydiaryappnative.ui.about.AboutActivity;
 import com.furieau.apps.mydiaryappnative.ui.about.OpenSourceLicensesActivity;
 import com.furieau.apps.mydiaryappnative.ui.about.PermissionExplanationActivity;
 import com.furieau.apps.mydiaryappnative.ui.about.ProjectPageOverlayActivity;
+import com.furieau.apps.mydiaryappnative.util.AESCipherActivity;
 
 import java.util.Objects;
 
@@ -126,6 +127,14 @@ public class SettingsActivity extends AppCompatActivity {
                 });
 
             }
+
+            // 调试
+            Preference oaca = findPreference("open_aescipher");
+            if (oaca != null) oaca.setOnPreferenceClickListener(preference -> {
+                Intent intent = new Intent(requireActivity(), AESCipherActivity.class);
+                startActivity(intent);
+                return true;
+            });
         }
 
         private void initializeExistingValues() {
