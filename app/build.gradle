@@ -12,8 +12,8 @@ android {
         applicationId "com.furieau.apps.mydiaryappnative"
         minSdk 33
         targetSdk 36
-        versionCode 3
-        versionName "0.0.2 Internal Dev"
+        versionCode 4
+        versionName "0.0.3 Internal Dev"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
